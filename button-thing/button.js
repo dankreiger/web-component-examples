@@ -6,6 +6,9 @@ class Button extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
     <style>
+      :host {
+        min-height: 200px;
+      }
       button {
         cursor: pointer;
         display: flex;
