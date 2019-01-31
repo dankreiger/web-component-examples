@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web Components</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+    <script src="button.js"></script>
+  </head>
+  <body>
+    <puppy-button is-visible="true">More Info For Puppies!</puppy-button>
+    <puppy-button is-visible="false">Ah word!</puppy-button>
+  </body>
+</html>
