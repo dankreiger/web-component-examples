@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web Components</title>
+    <style>
+      div {
+        color: orange;
+      }
+    </style>
+    <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
+  </head>
+  <body>
+    <template id="tooltip-template"> </template>
+    <p>
+      <puppy-tooltip text="Puppies know how to roll over"></puppy-tooltip>
+      are cool
+    </p>
+    <puppy-tooltip>hol das baellchen</puppy-tooltip>
+    <div>This does not get the web component styles</div>
+    <a is="puppy-link" href="http://www.dankreiger.com">Some puppy site</a>
+  </body>
+</html>
